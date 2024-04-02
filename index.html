@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+  <body>
+      <div class="weather-app">
+    <header>
+        <form id="submit-input">
+          <input type="search" placeholder="Enter a City..." 
+          required class="search-input" id="search-input"/>
+
+          <input type="submit" value="Search" class="search-button" />
+          
+      </form>
+    </header>
+    <hr>
+    <h1 class ="current-city" id="currentCity">Orlando</h1>
+    <p>
+      <div class ="current-temp"> 
+      <span class="temp-icon">☁️</span> 
+        <span class="temp-number" id="currentTemp">23</span>
+         <span class="temp-unit">°C</span>
+         </div> </p>
+    
+      <p>
+         <div class ="current-details">
+        <span id ="currentDate">Monday 10:57</span>,
+        <span class ="weather-type">Cloudy</span>
+      <br />Precipitation: <strong>3%</strong>, Wind: <strong>0 mph</strong>,
+      Humidity:
+      <strong>98%</strong>
+      </div>
+      <br />
+    </p>
+    <!--<ul>
+      <li>Sat ⛅<br /><strong>17°C</strong> - 26°C</li>
+      <li>Sun ⛅<br /><strong>18°C</strong> - 28°C</li>
+      <li>Mon ⛅<br /><strong>14°C</strong> - 25°C</li>
+      <li>Tue ☀️<br /><strong>11°C</strong> - 23°C</li>
+      <li>Wed ☀️<br /><strong>11°C</strong> - 25°C</li>
+    </ul>-->
+    <hr>
+    <footer>
+      This Project was Coded By
+      <a href="https://www.instagram.com/tara.a.walker" target="_blank"
+        >Tara Walker</a
+      >
+    </div>
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
